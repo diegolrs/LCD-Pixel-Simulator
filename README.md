@@ -11,3 +11,6 @@ Ciano - RGB(0, 255, 255)<br>
 Magenta - RGB(255, 0, 255)<br>
 Yellow - RGB(255, 255, 0)<br>
 Key - RGB(0, 0, 0)
+
+## Authors
+- [@Diego Reis](https://www.github.com/diegolrs)
