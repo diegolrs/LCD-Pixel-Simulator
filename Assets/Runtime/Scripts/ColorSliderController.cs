@@ -44,16 +44,20 @@ public class ColorSliderController : MonoBehaviour
         _blueSlider.minValue = 0;
         _greenSlider.minValue = 0;
 
-        _redSlider.maxValue = 1;
-        _blueSlider.maxValue = 1;
-        _greenSlider.maxValue = 1;
+        _redSlider.maxValue = 255;
+        _blueSlider.maxValue = 255;
+        _greenSlider.maxValue = 255;
+
+        _redSlider.wholeNumbers = true;
+        _greenSlider.wholeNumbers = true;
+        _blueSlider.wholeNumbers = true;
     }
 
     void ApplyInitialColor()
     {
-        _redSlider.value = _initialColor.r;
-        _greenSlider.value = _initialColor.g;
-        _blueSlider.value = _initialColor.b;
+        _redSlider.value = _initialColor.r*255;
+        _greenSlider.value = _initialColor.g*255;
+        _blueSlider.value = _initialColor.b*255;
         UpdateOutputRenderers();
     }
 
